@@ -1,0 +1,41 @@
+{
+  "name": "another-crawler",
+  "version": "0.1.0",
+  "description": "Another web crawler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "build": "node node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
+    "test": "export NODE_ENV=testing && jest --no-cache",
+    "watch": "export NODE_ENV=testing && jest --watch",
+    "coverage": "export NODE_ENV=testing && jest --coverage",
+    "example": "node ./example/index.js"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "jest": "^24.8.0",
+    "path": "^0.12.7",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muramasah/another-crawler.git"
+  },
+  "keywords": [
+    "Crawler"
+  ],
+  "author": "Xavier Felipe Medina <medina.xavier.felipe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Muramasah/another-crawler/issues"
+  },
+  "homepage": "https://github.com/Muramasah/another-crawler#readme",
+  "dependencies": {
+    "another-scraper": "^0.6.0",
+    "fs": "0.0.1-security"
+  }
+}
